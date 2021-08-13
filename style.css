@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+:root{
+	--pri--color: #090809;
+	--sec--color: #f40000;
+	--try--color: #f44e3f;
+	--for--color: #f4796b;
+	--fiv--color: #f4998d;
+	--six--color:#fff;
+}
+
+body{
+	word-break: break-word;
+	padding:0px;
+	margin:0px;
+	font-family:Roboto;
+	background-color: white;
+}
+.Container{
+	display:block;
+	word-break: break-word;
+	overflow: hidden ;
+	background-color: #111;
+}
+header{
+	transition: ease 0.3s;
+	z-index: 9;
+	background-color: var(--pri--color);
+	position:fixed;
+	display:flex;
+	border-width: 2px;
+	border-right-style: solid;
+	border-right-color: rgba(46, 46, 46, 0.87);
+	height:100vh;
+	width: 4rem;
+	
+	flex-direction:column;
+	flex:1;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+header:hover{
+	width: 18rem;
+}
+.btn--header{
+	cursor:pointer;
+	padding: 5px;
+	border-bottom-style:solid;
+	border-bottom-color:transparent;
+	transition: ease 0.3s;
+}
+.btn--header:hover{
+	border-bottom-color:var(--sec--color);
+}
+
+.featured{
+	
+	margin-left: 5rem;
+	height: 100vh;
+	width: 100vw;
+	
+	background-image: url('');
+	background-size: cover;
+	background-position: center;
+}
+.featured-vertical{
+	width: inherit;
+	height: inherit;
+	background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+.featured-horizontal{
+	color: white;
+	width: inherit;
+	height: inherit;
+	background: linear-gradient(to right, #111 30%, transparent 70%);
+}
+.featured--name{
+	text-overflow: ellipsis;
+	cursor:pointer;
+	padding-top: 4rem;
+	font-size: 60pt;
+}
+.featured--info{
+	display:flex;
+	padding:0px;
+	flex-direction: column;
+}
+.featured--info--especfc{
+	display:flex;
+	width: inherit;
+	max-width: 40%;
+}
+.featured--relevancia, .featured--data, .featured--tipo{
+	font-size: 1rem;
+	padding: 0rem 0.5rem 0rem 0.5rem;
+}
+.featured--relevancia{
+	color:#80E65C;
+}
+.featured--data, .featured--tipo{
+	color: rgb(80, 80, 80);
+}
+.featured--sinopse {
+	display:flex;
+	box-sizing:border-box;
+	flex-wrap: wrap;
+	height: 80%;
+	width: 40%;
+	max-width: 500px;
+	font-size: 22px;
+}
+.featured--sinopse p {
+	text-overflow: ellipsis;
+	height: 80%;
+	width: 40%;
+	max-width: 500px;
+	max-height: 500px;
+}
+.btn--m--info, .btn--play{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 12px 25px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.btn--play{
+	background-color:white;
+	color:black;
+}
+.btn--m--info{
+	background-color: #333;
+	color:white;
+	padding: 14px 25px;
+}
+.btn--m--info:hover, .btn--play:hover{
+	opacity: 70%;
+}
+.listas--filmes{
+	transform: translateY(-6rem);
+	padding-left: 5.31rem;
+}
+h2{
+	z-index: 80;
+	padding-bottom: 5px;
+	margin: 0px;
+	color:white;
+}
+.lista{
+	transition: ease 0.8s;
+	display:flex;
+	margin-bottom: 1.5rem;
+}
+.lista img{
+	height: 220px;
+	transition: ease 0.3s;
+	transform: scale(0.9); 
+}
+.lista img:hover{
+	transform: scale(1);
+}
+
+#solid-svg{
+	filter: invert(95%) sepia(3%) saturate(0%) hue-rotate(74deg) brightness(113%) contrast(73%);
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: flex  !important;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa-chevron-left, 
+.fa-chevron-right{
+	opacity: 0;
+	cursor:pointer;
+	position:absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:2.5rem;
+	z-index:99;
+	text-align: center;
+	background-color: #1119;
+	color: white;
+	
+	height: 220px;
+	width: 42px;
+	transition: ease 0.9s;
+}
+.fa-chevron-left{
+	left:4rem;
+}
+.fa-chevron-right{
+	right: 0px;
+}
+.lista:hover .fa-chevron-left,
+.lista:hover .fa-chevron-right{
+	opacity: 1;
+}
+#lista{
+	margin-left: 0px;
+}
+footer{
+	
+	color: white;
+	text-align: center;
+	margin-top:0px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+}
+lista--1{
+	z-index: 99;
+	margin-left: 0px;
+}
+#social--img--git{
+	color: white;
+	text-decoration:none;
+	font-size:3.5rem;
+}
+#social--img--link{
+	color: white;
+	text-decoration:none;
+	font-size:3.5rem;
+}
+#social--img--link:hover{
+	color: #267EFA;
+}
+.social{
+	display:flex;
+	justify-content: space-around;
+}
+.netfliux--img{
+	background-image: url('img/netflix-282224.png');
+	background-size: cover;
+	background-position:center;
+	padding:0px;
+	margin: 0px;
+	height: 5rem;
+}

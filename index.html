@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/23bc67046d.js" crossorigin="anonymous"></script>
+	<title>Netflix - Séries e Filmes</title>
+</head>
+
+<body>
+	<header>
+		<div>
+			<div class="btn-">
+				<img src="./img/netflix-logo-icon.svg" style="height:2.5rem">
+			</div>
+		</div>
+		<div class="btn--header">
+			<object id="solid-svg" type="image/svg+xml" data="./img/search-solid.svg" style="height:1.5rem"></object>
+		</div>
+		<div class="btn--header">
+			<img id="solid-svg" src="./img/home-solid.svg" style="height:1.5rem">
+		</div>
+		<div class="btn--header">
+			<img id="solid-svg" src="./img/calendar-alt-solid.svg" style="height:1.5rem">
+		</div>
+		<div class="btn--header">
+			<img id="solid-svg" src="./img/cloud-download.svg" style="height:1.5rem">
+		</div>
+		<div class="btn--header">
+			<img id="solid-svg" src="./img/display.svg" style="height:1.5rem">
+		</div>
+		<div class="btn--header">
+			<img id="solid-svg" src="./img/plus-lg.svg" style="height:1.5rem">
+		</div>
+	</header>
+	<div class="Container">
+		<section class="featured" id="featured">
+			<div class="featured-vertical">
+				<div class="featured-horizontal">
+					<div class="featured--name" id="featured--name">
+						<!--NOME-->
+					</div>
+					<div class="featured--info">
+						<div class="featured--info--especfc">
+							<p class="featured--relevancia" id="featured--relevancia">
+								<!--RELEVANCIA-->
+							</p>
+							<p class="featured--data" id="featured--data">
+								<!--DATA-->
+							</p>
+							<p class="featured--tipo">
+								<!--TIPO-->
+							</p>
+						</div>
+						<p class="featured--sinopse" id="featured--sinopse">
+							<!--Sinopse-->
+						</p>
+						<div class="featured--btn">
+							<a class="btn--play" href="#">▶ Play</a>
+							<a class="btn--m--info" href="#">+ Informações</a>
+						</div>
+						<p class="featured--generos" id="featured--generos">
+							<!--generos-->
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="listas--filmes">
+			<div class="filmes" id="filmes">
+				
+			</div>
+		</section>
+		<footer>
+			<section>
+				Feito por Uiaran Guilherme,<br />
+				<div class='social'>
+					<a id='social--img--git' href="https://github.com/uiaranguilherme"><i class="fab fa-github" style="font-size:3rem"></i></a>
+					<a id='social--img--link' href="https://www.linkedin.com/in/uiaran-campos-5452a2209/"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</section>
+			<div>
+				Direitos de imagem para : <br />
+				<div class='netfliux--img' ></div>
+			</div>
+			<div>
+				Dados pegos do site :
+				<a href="https://www.themoviedb.org/?language=pt-BR">
+					<img class="tmdb--img" type="svg" src="img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" />
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="./json/API_BASE.js"></script>
+<script src="./json/data.js"></script>
+<script src="./json/script.js"></script>
+
+</html>
